@@ -7,8 +7,13 @@
 body{
     font-family: 'Montserrat';
     color: #3D3A38;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.24;
 }
 
+
+/* HEADER */
 .container {
     display: flex;
     justify-content: space-between;
@@ -73,4 +78,57 @@ nav ul li a {
     text-transform: uppercase;
     transition: color 0.3s;
     font-size: 14px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-left {
+    background: url('assets/fromDesigner/imgs/banner-image.png') no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    background-position: center;
+}
+
+.hero-right {
+    background: url('assets/fromDesigner/imgs/banner-bg.png') no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+}
+
+.hero-right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-right p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-right a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.hero-right div{
+   text-align: ;
 }
