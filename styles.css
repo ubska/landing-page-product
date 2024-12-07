@@ -132,3 +132,16 @@ nav ul li a {
 .characteristics{
     text-align: center;
 }
+
+
+/* REWIES SECTION */
+.reviews-wrapp{
+    display: flex;
+    text-align: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.reviews h2{
+    text-align: center;
+}
