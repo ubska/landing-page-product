@@ -215,3 +215,83 @@ nav ul li a {
         /* Spaziatura tra i div */
     }
 }
+
+/* FAQ SECTION */
+
+/* FAQ Section */
+.faq-section {
+    padding: 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Wrapper for image and FAQ content */
+.faq-wrapp {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Left: Image styles */
+.faq-image {
+    flex: 1;
+    /* Occupies 50% */
+    text-align: center;
+}
+
+.faq-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Optional: Rounded corners */
+}
+
+/* Right: FAQ styles */
+.faq-content {
+    flex: 1;
+    /* Occupies 50% */
+}
+
+.faq-content details {
+    margin-bottom: 15px;
+}
+
+.faq-content summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.faq-content summary:hover {
+    color: #555;
+}
+
+.faq-content p {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-wrapp {
+        flex-direction: column;
+    }
+
+    .faq-image,
+    .faq-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .faq-image img {
+        margin-bottom: 20px;
+    }
+}
