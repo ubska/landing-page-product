@@ -367,3 +367,105 @@ nav ul li a {
     text-align: center;
     margin-top: 20px;
 }
+
+
+/* Stili per il menu */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Menu Desktop */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #333;
+}
+
+/* Modal Menu (invisible by default) */
+.modal {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-menu li {
+    margin: 20px 0;
+}
+
+.modal-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Menu Mobile */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        /* Hide normal menu on mobile */
+    }
+
+    .hamburger {
+        display: block;
+        /* Show hamburger icon on mobile */
+    }
+
+    .modal {
+        right: 0;
+        /* Show modal when it's open */
+    }
+}
