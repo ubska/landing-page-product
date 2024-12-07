@@ -138,15 +138,10 @@ nav ul li a {
 .characteristics {
     display: flex;
     justify-content: space-between;
-    /* Spaziatura tra le colonne */
-    align-items: center;
-    text-align: center;
-    /* Allinea le colonne in alto */
+    align-items: flex-start;
     gap: 20px;
-    /* Spaziatura orizzontale tra le colonne */
     margin: 40px auto;
     max-width: 1200px;
-    /* Limita la larghezza massima */
     padding: 20px;
 }
 
@@ -154,33 +149,56 @@ nav ul li a {
 .characteristics .left-column,
 .characteristics .right-column {
     flex: 1;
-    /* Ogni colonna occupa lo stesso spazio disponibile */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Spaziatura verticale tra le caratteristiche */
 }
 
 .characteristics .center-column {
     flex: 1;
-    /* La colonna centrale occupa lo stesso spazio delle altre */
     display: flex;
     justify-content: center;
-    /* Centra l'immagine orizzontalmente */
     align-items: center;
-    /* Centra l'immagine verticalmente */
 }
 
-/* Immagine */
 .characteristics .center-column img {
     max-width: 100%;
-    /* Adatta l'immagine alla larghezza disponibile */
     height: auto;
-    /* Mantieni il rapporto d'aspetto */
     object-fit: contain;
-    /* Adatta l'immagine senza distorsioni */
 }
 
+/* Responsive: Mobile Version */
+@media (max-width: 768px) {
+    .characteristics {
+        flex-direction: column;
+        /* Dispone le colonne in verticale */
+        gap: 40px;
+        /* Aggiunge spazio tra le colonne in verticale */
+    }
+
+    .characteristics .left-column,
+    .characteristics .center-column,
+    .characteristics .right-column {
+        flex: none;
+        /* Rimuove il comportamento di larghezza flessibile */
+        width: 100%;
+        /* Ogni colonna occupa tutta la larghezza disponibile */
+        text-align: center;
+        /* Centra il testo per una migliore leggibilità */
+    }
+
+    .characteristics .center-column {
+        order: -1;
+        /* Opzionale: porta l'immagine al primo posto */
+    }
+
+    .characteristics .center-column img {
+        max-width: 80%;
+        /* Riduce leggermente la dimensione dell'immagine */
+        margin: 0 auto;
+        /* Centra l'immagine */
+    }
+}
 
 /* REWIES SECTION */
 .reviews-wrapp{
