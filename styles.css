@@ -145,3 +145,73 @@ nav ul li a {
 .reviews h2{
     text-align: center;
 }
+
+
+
+
+.images-section {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.images-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.images-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.images-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    /* Spaziatura tra le immagini */
+}
+
+.images-grid>div {
+    flex: 1;
+    text-align: center;
+}
+
+.images-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.info .stars {
+    font-size: 16px;
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Adattamento per dispositivi mobili */
+@media (max-width: 768px) {
+    .images-grid {
+        flex-direction: column;
+    }
+
+    .images-grid>div {
+        margin-bottom: 20px;
+        /* Spaziatura tra i div */
+    }
+}
