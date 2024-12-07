@@ -12,14 +12,19 @@ body{
     line-height: 1.24;
 }
 
+/* General container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* HEADER */
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
+} */
 
 .left-column,
 .right-column {
@@ -129,8 +134,51 @@ nav ul li a {
     border: 1px solid black;
 }
 
-.characteristics{
+/* Contenitore principale */
+.characteristics {
+    display: flex;
+    justify-content: space-between;
+    /* Spaziatura tra le colonne */
+    align-items: center;
     text-align: center;
+    /* Allinea le colonne in alto */
+    gap: 20px;
+    /* Spaziatura orizzontale tra le colonne */
+    margin: 40px auto;
+    max-width: 1200px;
+    /* Limita la larghezza massima */
+    padding: 20px;
+}
+
+/* Colonne generali */
+.characteristics .left-column,
+.characteristics .right-column {
+    flex: 1;
+    /* Ogni colonna occupa lo stesso spazio disponibile */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Spaziatura verticale tra le caratteristiche */
+}
+
+.characteristics .center-column {
+    flex: 1;
+    /* La colonna centrale occupa lo stesso spazio delle altre */
+    display: flex;
+    justify-content: center;
+    /* Centra l'immagine orizzontalmente */
+    align-items: center;
+    /* Centra l'immagine verticalmente */
+}
+
+/* Immagine */
+.characteristics .center-column img {
+    max-width: 100%;
+    /* Adatta l'immagine alla larghezza disponibile */
+    height: auto;
+    /* Mantieni il rapporto d'aspetto */
+    object-fit: contain;
+    /* Adatta l'immagine senza distorsioni */
 }
 
 
